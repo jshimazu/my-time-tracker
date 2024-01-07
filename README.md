@@ -1,9 +1,14 @@
-# tryoutstack/hello-world
+# my-time-tracker
 
 ## Description
-"Hello, world!" を出力するだけの雛形
+Time tracking for my tools.
+
+## Data sources
+* Things3 for Mac
+* Google Calendar API
 
 ## Run
+
 ```
 make run
 ```
