@@ -3,5 +3,9 @@ services:
   app:
     build: .
     volumes:
-      - .:/usr/src/app
+      - .:/app
+      # https://github.com/thingsapi/things.py/blob/e0218ca72a829fa623ca0d3ddbb5172b2709020c/things/database.py#L20
+      - ${THINGS3_SQLITE_FILEPATH}:/data/main.sqlite
     command: poetry run python main.py
+    environment:
+      THINGSDB: /data/main.sqlite

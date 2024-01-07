@@ -1,11 +1,12 @@
 [tool.poetry]
-name = "ignition-stack/hello-world"
+name = "main"
 version = "0.1.0"
-description = "Ignition stack - hello world"
+description = "hello world"
 authors = ["jshimazu"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+things-py = "0.0.14"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
